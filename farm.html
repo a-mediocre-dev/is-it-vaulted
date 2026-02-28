@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Is it vaulted?</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="farm.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+</head>
+
+<body>
+    <h1>IS IT VAULTED?</h1>
+    <div id="nav"></div>
+    <div id="steps-div">
+        <label for="steps">Amount per click</label>
+        <input type="number" id="steps" name="steps" value="1" min="1">
+    </div>
+
+    <div id="add-tracker-div">
+        <div class="tracker-field">
+            <label for="resource-name">Resource name</label>
+            <input type="text" id="resource-name" name="resource-name">
+        </div>
+        <div class="tracker-field">
+            <label for="target">Target amount</label>
+            <input type="number" id="target" name="target" value="100">
+        </div>
+        <button id="add-tracker">Add tracker</button>
+    </div>
+
+    <div id="farm-div">
+        <table id="farm-table">
+            <tr>
+                <th>Resource Name</th>
+                <th>Current</th>
+                <th>Target</th>
+                <th>Increment</th>
+                <th>Decrement</th>
+                <th>Remove</th>
+            </tr>
+            <tr class="farm-entry not-at-target">
+                <td class="resource-td"><span class="resource-name">Rubedo</span></td>
+                <td class="current-td"><span class="current-amount">10</span></td>
+                <td class="target-td"><span class="target-amount">9</span></td>
+                <td class="increment-td"><button class="increment">+</button></td>
+                <td class="decrement-td"><button class="decrement">-</button></td>
+                <td class="remove-td"><button class="remove">X</button></td>
+            </tr>
+        </table>
+    </div>
+    <script src="farm.js"></script>
+    <script src="components.js"></script>
+</body>
+
+</html> 
